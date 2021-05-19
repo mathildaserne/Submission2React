@@ -1,0 +1,35 @@
+
+
+.buttonCount {
+    border-radius: 4px;
+	display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color:rgb(138, 201, 252);
+    width: 10%;
+}
+
+.aboutView {
+    border-radius: 4px;
+	display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.backToHome,
+.backToSignIn,
+.backToUser {
+    border-radius: 4px;
+	display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color:rgb(252, 138, 176);
+    width: 12%;
+}
+
+div {
+    border-radius: 4px;
+	display: block;
+    margin: 0 auto;
+    text-align: center;
+}

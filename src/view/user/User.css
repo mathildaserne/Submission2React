@@ -1,0 +1,32 @@
+button {
+    border-radius: 4px;
+	display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color:rgb(252, 138, 176);
+}
+
+.userView {
+    border-radius: 4px;
+	display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.backToHome,
+.backToAbout,
+.backToSignIn {
+    border-radius: 4px;
+	display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color:rgb(252, 138, 176);
+    width: 12%;
+}
+
+div {
+	display: block;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 4px;
+}

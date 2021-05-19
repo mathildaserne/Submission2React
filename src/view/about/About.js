@@ -2,16 +2,17 @@ import React from 'react'
 import {useHistory, useLocation} from 'react-router-dom'
 import {Routing} from '../../routes/Routing'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import {useEffect, useState} from 'react'
+import {useEffect, useState, useContext} from 'react'
 import './About.css'
 import loadingGif from '../../shared/images/loadingGif.gif'
 import StarWarsAPIservice from '../../shared/api/service/StarWarsAPIservice'
+import {UserContext} from '../../shared/provider/UserProvider'
 
 export const About = () => {
     const history = useHistory()
     const location = useLocation()
     const [count, setCount] = useState(1)
-	const [character, setCharacter] = useState([])
+	const [character, setCharacter] = useContext(UserContext)
     const [loading, setLoading] = useState(true)
 
 	const getCharacterNameFromStarwarsAPI = async () => {
@@ -48,27 +49,27 @@ export const About = () => {
         if (!loading)
         {
 			return ( 
-            <div>
-				<h2>{(character || undefined)?.name}</h2>
+            <div className="character">
+				<h3>{(character || undefined)?.name}</h3>
 			</div>
             )
         }
         else {
-			return <img src={loadingGif} alt={'Error..'} /> 
-		}
+			return <img className="loadingGif" src={loadingGif} alt={'Error..'} /> 
+        }
 	}
 
     return (
         <div>
-            <br/>
-            <h1 className="aboutView">
-            About view</h1> <br/>
+            <br/> <br/>
             {displayCharacterName()} <br/>
-            {buttons()} <br/> <br/>
-            <button className="backToHome" onClick={() => history.push('./home')}>Go to home</button> <br/>
-            <button className="backToSignIn" onClick={() => history.push('./signin')}>Go to signin</button> <br/> <br/>
-            <button className="backToUser" onClick={() => history.push('./user')}>Go to user</button> <br/> <br/>
-            <h1>Path is: {location.pathname}</h1>
+            <h1 className="aboutView">
+            About</h1> 
+            {buttons()} <br/> 
+            <h1 className="backToHome" onClick={() => history.push('./home')}>Go to home</h1> <br/>
+            <h1 className="backToSignIn" onClick={() => history.push('./signin')}>Go to signin</h1> <br/> 
+            <h1 className="backToUser" onClick={() => history.push('./user')}>Go to user</h1> <br/> <br/>
+            <h1 className="path" >Path is: {location.pathname}</h1>
         </div>
     )
 }

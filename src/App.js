@@ -7,12 +7,15 @@ import {useEffect} from 'react'
 import {About} from './view/about/About'
 import {Home} from './view/home/Home'
 import {User} from './view/user/User'
+import {UserProvider} from './shared/provider/UserProvider'
 
 export const App = () => {
 
 	return (
+	<UserProvider>
 		<Routing>
 			<NavigationBar/>
 		</Routing>
+	</UserProvider>	
 	)
 }

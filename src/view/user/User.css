@@ -4,13 +4,15 @@ button {
     margin: 0 auto;
     text-align: center;
     background-color:rgb(252, 138, 176);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-style: oblique;
 }
 
 .userView {
-    border-radius: 4px;
-	display: block;
-    margin: 0 auto;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    background-color:rgb(138, 201, 252);
 }
 
 .backToHome,
@@ -22,6 +24,10 @@ button {
     text-align: center;
     background-color:rgb(252, 138, 176);
     width: 12%;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-size: 150%;
 }
 
 div {
@@ -29,4 +35,18 @@ div {
     margin: 0 auto;
     text-align: center;
     border-radius: 4px;
+}
+
+.path {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    font-size: 150%;
+}
+
+.gif {
+    width: 20%;
+    height: 10%;
+    display: unset;
+    grid-template-columns: repeat(10, 1fr);
+    border-style: solid;
 }

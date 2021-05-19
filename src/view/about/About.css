@@ -1,19 +1,19 @@
-
-
 .buttonCount {
     border-radius: 4px;
 	display: block;
     margin: 0 auto;
     text-align: center;
-    background-color:rgb(138, 201, 252);
-    width: 10%;
+    background-color:rgb(180, 252, 138);
+    width: 12%;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-style: oblique;
 }
 
 .aboutView {
-    border-radius: 4px;
-	display: block;
-    margin: 0 auto;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    background-color:rgb(138, 201, 252);
 }
 
 .backToHome,
@@ -25,6 +25,10 @@
     text-align: center;
     background-color:rgb(252, 138, 176);
     width: 12%;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-style: oblique;
+    font-size: 150%;
 }
 
 div {
@@ -32,4 +36,28 @@ div {
 	display: block;
     margin: 0 auto;
     text-align: center;
+}
+
+.character {
+    font-size: 170%;
+    text-align: center;
+    display: table;
+    width: 28%;
+    background-color: coral;
+    border-style:solid;
+}
+
+.loadingGif {
+    width: 40%;
+    height: 30%;
+    display: unset;
+    grid-template-columns: repeat(10, 1fr);
+    border-style: solid;
+}
+
+.path {
+    grid-template-columns: repeat(10, 1fr);
+    font-size: 150%;
+    display: table;
+    background-color: rgb(255, 194, 80);
 }

@@ -1,7 +1,7 @@
 .navigationBarWrapper {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    background-color:rgb(131, 255, 214);
+    background-color:rgb(205, 158, 250);
 }
 
 .logotype {
@@ -28,6 +28,8 @@
 .about,
 .user {
     cursor: pointer;
+	transition:ease-in-out;
     text-transform: uppercase;
     font-style: oblique;
+   
 }

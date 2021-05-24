@@ -1,7 +1,7 @@
 .navigationBarWrapper {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    background-color:rgb(205, 158, 250);
+    background-color:rgb(224, 193, 253);
 }
 
 .logotype {

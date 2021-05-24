@@ -30,7 +30,6 @@ export const About = () => {
     }, [count])        
 
     useEffect (() => {
-        console.log(location)
         console.log(character)
     }, [])
 
@@ -38,7 +37,7 @@ export const About = () => {
 		return <div>
             <br/>
 			<button className="buttonCount" onClick={() => setCount(count + 1)}>Load new character {count} </button> <br />
-			<button className="buttonCount" onClick={() => setCount(count - 1)}>Go back {count} </button> 
+			<button className="buttonCount" onClick={() => setCount(count - 1)}>Go back character{count} </button> 
 		</div>
 	}
 
@@ -65,9 +64,9 @@ export const About = () => {
             <h1 className="aboutView">
             About</h1> 
             {buttons()} <br/> 
-            <h1 className="backToHome" onClick={() => history.push('/home', 'To home')}>Go to home</h1> <br/>
-            <h1 className="backToSignIn" onClick={() => history.push('/signin')}>Go to signin</h1> <br/> 
-            <h1 className="backToUser" onClick={() => history.push('/user')}>Go to user</h1> <br/> <br/>
+            <h1 className="backToHome" onClick={() => history.push('/home', 'Home')}>Go to home</h1> <br/>
+            <h1 className="backToSignIn" onClick={() => history.push('/signin', 'Sign in')}>Go to signin</h1> <br/> 
+            <h1 className="backToUser" onClick={() => history.push('/user', 'User')}>Go to user</h1> <br/> <br/>
         </div>
     )
 }

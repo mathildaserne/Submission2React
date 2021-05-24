@@ -12,7 +12,7 @@ button {
 .homeView {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    background-color:rgb(138, 201, 252);
+    background-color:rgb(196, 227, 253);
 }
 
 .backToAbout, 
@@ -49,4 +49,13 @@ div {
     display: unset;
     grid-template-columns: repeat(10, 1fr);
     border-style: solid;
+}
+
+.array {
+    font-family:monospace;
+    font-size: 180%;
+    display: block;
+    align-self: center;
+    width: 100%;
+    background-color: rgb(153, 255, 153);
 }

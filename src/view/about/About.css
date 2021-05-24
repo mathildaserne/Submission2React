@@ -1,13 +1,13 @@
 .buttonCount {
     border-radius: 4px;
-	display: block;
     margin: 0 auto;
     text-align: center;
     background-color:rgb(180, 252, 138);
-    width: 12%;
+    width: 17%;
     cursor: pointer;
     text-transform: uppercase;
-    font-style: oblique;
+    font-family:serif;
+    font-weight: bolder;
 }
 
 .aboutView {
@@ -23,7 +23,7 @@
 	display: block;
     margin: 0 auto;
     text-align: center;
-    background-color:rgb(252, 138, 176);
+    background-color:rgb(255, 169, 198);
     width: 12%;
     cursor: pointer;
     text-transform: uppercase;
@@ -39,11 +39,11 @@ div {
 }
 
 .character {
-    font-size: 170%;
+    font-size: 100%;
     text-align: center;
     display: table;
-    width: 28%;
-    background-color: coral;
+    width: 50%;
+    background-color: rgb(248, 167, 138);
     border-style:solid;
 }
 
@@ -55,9 +55,9 @@ div {
     border-style: solid;
 }
 
-.path {
+.state {
     grid-template-columns: repeat(10, 1fr);
     font-size: 150%;
     display: table;
-    background-color: rgb(255, 194, 80);
+    background-color: rgb(250, 214, 149);
 }

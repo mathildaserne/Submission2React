@@ -1,14 +1,14 @@
 import React from 'react'
 import './NavigationBar.css'
 import Logotype from '../../shared/images/logotype.svg'
-import {useHistory} from 'react-router-dom'
+import {useHistory, useLocation} from 'react-router-dom'
 
 export const NavigationBar = () => {
 const history = useHistory()
 
     return (
         <div className="navigationBarWrapper">
-            <img onClick={() => history.push('/')}
+            <img onClick={() => history.push('/home')}
                 className="logotype"
                 src={Logotype} 
                 alt="error"/>

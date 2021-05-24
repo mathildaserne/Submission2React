@@ -3,7 +3,7 @@ button {
 	display: block;
     margin: 0 auto;
     text-align: center;
-    background-color:rgb(252, 138, 176);
+    background-color:rgb(255, 169, 198);
     cursor: pointer;
     text-transform: uppercase;
     font-style: oblique;
@@ -22,7 +22,7 @@ button {
 	display: block;
     margin: 0 auto;
     text-align: center;
-    background-color:rgb(252, 138, 176);
+    background-color:rgb(255, 169, 198);
     width: 12%;
     cursor: pointer;
     text-transform: uppercase;
@@ -37,7 +37,7 @@ div {
     border-radius: 4px;
 }
 
-.path {
+.state {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     font-size: 150%;

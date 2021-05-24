@@ -1,7 +1,5 @@
 import React from 'react'
 import {useHistory, useLocation} from 'react-router-dom'
-import {Routing} from '../../routes/Routing'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import {useEffect, useState, useContext} from 'react'
 import './About.css'
 import loadingGif from '../../shared/images/loadingGif.gif'
@@ -23,7 +21,6 @@ export const About = () => {
     } catch (error) {
             console.log('something went wrong!')
     }
-
 	}
 
 	useEffect (() => {
@@ -40,8 +37,8 @@ export const About = () => {
     const buttons = () => {
 		return <div>
             <br/>
-			<button className="buttonCount" onClick={() => setCount(count + 1)}>Increment {count} </button> <br />
-			<button className="buttonCount" onClick={() => setCount(count - 1)}>Decrement {count} </button> 
+			<button className="buttonCount" onClick={() => setCount(count + 1)}>Load new character {count} </button> <br />
+			<button className="buttonCount" onClick={() => setCount(count - 1)}>Go back {count} </button> 
 		</div>
 	}
 
@@ -50,7 +47,9 @@ export const About = () => {
         {
 			return ( 
             <div className="character">
-				<h3>{(character || undefined)?.name}</h3>
+				<h3>Name of character: {(character || undefined)?.name}</h3>
+                <h3>Height of character: {(character || undefined)?.height}</h3>
+                <h3>Hair color of character: {(character || undefined)?.hair_color}</h3>
 			</div>
             )
         }
@@ -66,10 +65,9 @@ export const About = () => {
             <h1 className="aboutView">
             About</h1> 
             {buttons()} <br/> 
-            <h1 className="backToHome" onClick={() => history.push('./home')}>Go to home</h1> <br/>
-            <h1 className="backToSignIn" onClick={() => history.push('./signin')}>Go to signin</h1> <br/> 
-            <h1 className="backToUser" onClick={() => history.push('./user')}>Go to user</h1> <br/> <br/>
-            <h1 className="path" >Path is: {location.pathname}</h1>
+            <h1 className="backToHome" onClick={() => history.push('/home', 'To home')}>Go to home</h1> <br/>
+            <h1 className="backToSignIn" onClick={() => history.push('/signin')}>Go to signin</h1> <br/> 
+            <h1 className="backToUser" onClick={() => history.push('/user')}>Go to user</h1> <br/> <br/>
         </div>
     )
 }

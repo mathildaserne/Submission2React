@@ -16,7 +16,7 @@ export const SignIn = () => {
             <h1 className="backToHome" onClick={() => history.push('./home')}>Go to home</h1> <br/>
             <h1 className="backToAbout" onClick={() => history.push('./about')}>Go to about</h1> <br/> 
             <h1 className="backToUser" onClick={() => history.push('./user')}>Go to user</h1> <br/> 
-            <h1 className="path" >Path is: {location.pathname}</h1>
+            <h1 className="state" >Path: {location.pathname}</h1>
         </div>
     )
 }
